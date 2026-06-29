@@ -1,7 +1,7 @@
 # Cardiac Rehabilitation Risk Prediction 
 
 ### Live Demo  
-🔗 Try it here: [CR Risk Predictor](https://huggingface.co/spaces/Shaaranii12/emotion-analyzer)  
+🔗 Try it here: [Cardiac Rehabilitation Risk Predictor](https://huggingface.co/spaces/Shaaranii12/cardiac-rehabilitation-risk-prediction)  
 
 ## Overview  
 Cardiac rehabilitation is a structured program designed to improve the health and recovery of patients with cardiovascular disease. Identifying patients who may be at elevated risk during rehabilitation allows clinicians to provide more personalized care and exercise recommendations.
@@ -34,23 +34,16 @@ The AI assistant:<br>
 * Compared models before and after feature selection using **ROC-AUC** and other classification metrics.
 * Selected **CatBoost** as the final model based on its overall performance and robustness.
 
-**Feature selection reduced model complexity while maintaining strong predictive performance and improving model generalization.** <br>
-![Impact of Feature Selection](images/Graph1.png)  
-
-
 
 ## Screenshots
-The model was fine-tuned using the j-hartmann/emotion-english-distilroberta-base transformer, and evaluated to measure its performance across different emotion categories
+### Feature selection reduced model complexity while maintaining strong predictive performance and improving model generalization.
 
-### Confusion Matrix
-![Confusion Matrix](images/ConfusionMatrix.png)  
+![Impact of Feature Selection](Images/graph1.png)  
 
-### Input and Prediction Examples
-![Demo 1](images/demo1.png)
-![Demo 2](images/demo2.png)  
 
 ## Tools and Technologies used 
-- **Python**  
+- **Python**
+- **Classification Models** - CatBoost, XGBoost, Random Forest, Artificial Neural Network
 - **SHAP (Explainable AI)**
 - **Scikit-learn**
 - **Pandas & NumPy** 
