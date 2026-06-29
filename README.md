@@ -34,12 +34,22 @@ The AI assistant:<br>
 * Compared models before and after feature selection using **ROC-AUC** and other classification metrics.
 * Selected **CatBoost** as the final model based on its overall performance and robustness.
 
-
 ## Screenshots
-### Feature selection reduced model complexity while maintaining strong predictive performance and improving model generalization.
+**Feature selection** reduced model complexity while maintaining strong predictive performance and improving model generalization.
 
 ![Impact of Feature Selection](Images/graph1.png)  
 
+The **ROC curves** compare the predictive performance of four machine learning models. CatBoost achieved the highest ROC-AUC, demonstrating **superior discriminative ability** and was selected as the final deployment model.
+
+![Impact of Feature Selection](Images/comparison.png)  
+
+The confusion matrices illustrate the **classification performance** of each model on the test set, highlighting their ability to correctly **identify low- and high-risk** patients while minimizing misclassifications.
+
+![Impact of Feature Selection](Images/CM1.png)  
+
+**SHAP** identifies the **most influential clinical features** contributing to each prediction, while the **LLM** transforms these insights into personalized, human-readable clinical reports to support decision-making.
+
+![Impact of Feature Selection](Images/SHAP.png)  
 
 ## Tools and Technologies used 
 - **Python**
